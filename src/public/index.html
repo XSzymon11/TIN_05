@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel aplikacji</title>
+
+    <link rel="stylesheet" href="/style.css">
+
+    <script src="/stats.js" defer></script>
+</head>
+<body>
+
+<div class="page-wrapper">
+    <div class="card">
+        <h1>Panel</h1>
+        <p class="subtitle">
+            s29267 TIN05
+        </p>
+
+        <div class="actions">
+            <a href="/contact.html" class="btn primary">Formularz kontaktowy</a>
+        </div>
+
+        <hr style="margin: 20px 0; border-color: #1f2937;">
+
+        <section id="liveStats">
+            <h2>Aktualne dane z serwera</h2>
+            <p class="subtitle">
+                Dane są odświeżane co 5 sekund asynchronicznie.
+            </p>
+
+            <p>Ostatnia aktualizacja: <span id="statsTime">–</span></p>
+            <p>Wartość losowa: <span id="statsValue">–</span></p>
+            <p>Symulowane opóźnienie: <span id="statsDelay">–</span> ms</p>
+        </section>
+    </div>
+</div>
+
+</body>
+</html>
